@@ -1,0 +1,67 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav_menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+
+}   
+
+.lista_menu {
+    padding-left: 20px;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+}
+
+.links_menu {
+    padding-right: 10px;
+}
+
+.links_menu:hover {
+    text-decoration: underline;
+}
+
+.ranking_tabla {
+    padding-top: 2vh;
+    padding-left: 2vw;
+}
+
+.encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: aqua;
+    width: 90vw;
+}
+
+.item_ranking {
+    justify-self: left;
+    padding-right: 3vw;
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+}
+
+#rank {
+    width: 10%;
+}
+
+#nombre_jugador {
+    width: 55%;
+}
+
+#tiempo_jugador {
+    width: 15%;
+}
+
+#puntaje_jugador {
+    width: 20%;
+}
