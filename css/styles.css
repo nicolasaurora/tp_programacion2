@@ -4,6 +4,45 @@
     box-sizing: border-box;
 }
 
+.bienvenida {
+    padding-top: 10px;
+    color: red;
+    justify-self: center;
+    
+}
+
+.desc {
+    padding-top: 5px;
+    justify-self: center;
+
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;  
+}
+
+a {
+    text-decoration: none;
+}
+
+a .boton, .boton {
+    display: block;
+    margin: 15px auto 0;
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+
+.boton:hover {
+    background-color: darkcyan;
+    color: white;
+}
+
 .nav_menu {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -71,6 +110,11 @@
     bottom: 0;
     left: 0;
     width: 100%;
+    padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
+    border: 0;
+    border-top: 1px;
+    border-style: solid;
+    color: black;
 }
