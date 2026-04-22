@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js"></script>    
+    <title>Memorial | Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
 
-        <nav>
-            <ul>
-                <li><a href="">Inicio</a></li>
-                <li><a href="">Ranking</a></li>
-                <li><a href="">Reglas del juego</a></li>
+        <nav class="nav_menu">
+            <ul class="lista_menu">
+                <li><a class="links_menu" href="./index.html">Inicio</a></li>
+                <li><a class="links_menu" href="./ranking.html">Ranking</a></li>
+                <li><a class="links_menu" href="./rules.html">Reglas del juego</a></li>
             </ul>
         </nav>
 
@@ -21,34 +26,34 @@
 
     <main>
 
-        <form action="">
+        <form action="" class="form">
 
-            <div>
+            <div class="form_group">
                 <label for="">Nombre:</label>
                 <input type="text" required>
             </div>
 
-            <div>
+            <div class="form_group">
                 <label for="">Apellido:</label>
                 <input type="text" required>
             </div>
 
-            <div>
+            <div class="form_group">
                 <label for="">Email:</label>
                 <input type="email" required>
             </div>
 
-            <div>
+            <div class="form_group">
                 <label for="">Telefono:</label>
                 <input type="number" required>
             </div>
 
-            <div>
+            <div class="form_group">
                 <label for="">Fecha de nacimiento:</label>
                 <input type="date" required>
             </div>
 
-            <div>
+            <div class="form_group">
                 <legend>Seleccionar sexo:</legend>
                 <input type="radio" name="sexo" checked>
                 <label for="">Masculino</label><br>
@@ -58,7 +63,7 @@
                 <label for="">Otro</label>
             </div>
 
-            <div>
+            <div class="form_group">
                 <label for="">Ha jugado alguna vez juego de memoria?</label>
                 <Select>
                     <option value="valor1">Si</option>
@@ -66,9 +71,9 @@
                 </Select>
             </div>
 
-            <div>
-                <button type="submit">Enviar registro</button>
-                <button>Iniciar Juego</button>
+            <div class="form_group_btn">
+                <button type="submit" class="btn_submit">Enviar registro</button>
+                <a href="./game.html" class="btn_submit">Iniciar Juego</a>
             </div>                                                                                   
         </form>
 
