@@ -26,6 +26,11 @@ a {
     text-decoration: none;
 }
 
+tr {
+    background-color: red;
+    height: 45px;
+}
+
 a .boton, .boton {
     display: block;
     margin: 15px auto 0;
@@ -79,6 +84,15 @@ a .boton, .boton {
     justify-content: left;
     background-color: aqua;
     width: 90vw;
+}
+
+.posicion_ranking {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    background-color: aqua;
+    width: 90vw;
+
 }
 
 .item_ranking {
