@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/main.js"></script>    
     <title>Memorial | Registro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Science+Gothic:wght@100..900&display=swap" rel="stylesheet">
+    <script src="js/main.js"></script>
 </head>
 <body>
 
@@ -30,49 +30,55 @@
 
             <div class="form_group">
                 <label for="">Nombre:</label>
-                <input type="text" required>
+                <input type="text" name="nombre" required>
             </div>
 
             <div class="form_group">
                 <label for="">Apellido:</label>
-                <input type="text" required>
+                <input type="text" name="apellido" required>
+            </div>
+
+            <div class="form_group">
+                <label for="">Apodo:</label>
+                <input type="text" name="apodo" required>
             </div>
 
             <div class="form_group">
                 <label for="">Email:</label>
-                <input type="email" required>
+                <input type="email" name="email" required>
             </div>
 
             <div class="form_group">
                 <label for="">Telefono:</label>
-                <input type="number" required>
+                <input type="number" name="telefono" required>
             </div>
 
             <div class="form_group">
                 <label for="">Fecha de nacimiento:</label>
-                <input type="date" required>
+                <input type="date" name="fecha_nacimiento" required>
             </div>
 
             <div class="form_group">
                 <legend>Seleccionar sexo:</legend>
-                <input type="radio" name="sexo" checked>
+                <input type="radio" name="sexo" value="masculino">
                 <label for="">Masculino</label><br>
-                <input type="radio" name="sexo">
+                <input type="radio" value="femenino" name="sexo">
                 <label for="">Femenino</label><br>
-                <input type="radio" name="sexo">
+                <input type="radio" value="otro" name="sexo">
                 <label for="">Otro</label>
             </div>
 
             <div class="form_group">
                 <label for="">Ha jugado alguna vez juego de memoria?</label>
-                <Select>
-                    <option value="valor1">Si</option>
-                    <option value="valor2">No</option>
+                <Select name="experiencia">
+                    <option value="Si">Si</option>
+                    <option value="No">No</option>
                 </Select>
             </div>
 
             <div class="form_group_btn">
                 <button type="submit" class="btn_submit">Enviar registro</button>
+                <button type="button" id="reset" class="btn_submit">Borrar Datos</button>
                 <a href="./game.html" class="btn_submit">Iniciar Juego</a>
             </div>                                                                                   
         </form>
@@ -80,10 +86,9 @@
     </main>
 
 
-    <footer>
+    <footer class="datos">
         <span>&copy; Todos los derechos Reservados 2026.</span>
     </footer>
-    
     
 </body>
 </html>
