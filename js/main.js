@@ -178,7 +178,8 @@ function finalizarJuego() {
             arrayRanking.push(nuevoRegistro)
             arrayRanking.sort((a, b) => b.puntaje - a.puntaje)
             localStorage.setItem('ranking', JSON.stringify(arrayRanking))
-        
+            mostrarPopup("Felicidades! Tu puntaje se posicionó entre los 10 mejores. Puntaje: ", puntaje)
+            
         }
 
         else if (puntaje > arrayRanking[9].puntaje)
@@ -186,11 +187,19 @@ function finalizarJuego() {
             arrayRanking[9] = nuevoRegistro
             arrayRanking.sort((a, b) => b.puntaje - a.puntaje)
             localStorage.setItem('ranking', JSON.stringify(arrayRanking))
+            mostrarPopup("Felicidades! Tu puntaje se posicionó entre los 10 mejores. Puntaje: ", puntaje)
+
+        }
+        else
+        {
+            mostrarPopup("Felicidades! Lograste completar el juego. Sin embargo, no alcanzó para entrar en los mejores. Puntaje: ", puntaje)
+            
         }
         resetearJuego()
     } 
     else if (juegoFallido) 
     {
+        mostrarPopup("Más suerte la próxima! No pudiste completar el juego en el tiempo límite. Puntaje: ", puntaje)
         resetearJuego()
     }
 }
@@ -227,8 +236,18 @@ function actualizarContador(){
     contadorMovimientos.textContent = movimientos
 }
 
+function mostrarPopup(mensaje, puntaje) {
+    document.getElementById('popup-mensaje').textContent = mensaje;
+    document.getElementById('popup-puntaje').textContent = puntaje;
+    document.getElementById('overlay').classList.add('activo');
+}
 
+function cerrarPopupDirecto() {
+    document.getElementById('overlay').classList.remove('activo');
+}
 
-
-
-
+function cerrarPopup(event) {
+    if (event.target === document.getElementById('overlay')) {
+    cerrarPopupDirecto();
+    }
+}
