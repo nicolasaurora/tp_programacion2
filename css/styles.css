@@ -79,6 +79,7 @@ tr {
 .ranking_tabla {
     padding-top: 2vh;
     padding-left: 2vw;
+    text-align: center;
 }
 
 .encabezado {
@@ -106,24 +107,23 @@ tr {
     border-style: solid;
 }
 
-#rank {
+.rank {
     width: 10%;
 }
 
-#nombre_jugador {
+.nombre_jugador {
     width: 55%;
 }
 
-#tiempo_jugador {
+.tiempo_jugador {
     width: 15%;
 }
 
-#puntaje_jugador {
+.puntaje_jugador {
     width: 20%;
 }
 
 .footer {
-    position: fixed;
     width: 100%;
     padding: 20px;
     padding-left: 20px;
@@ -267,41 +267,48 @@ tr {
 
 .card-front,
 .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 
-  border-radius: 10px;
-  backface-visibility: hidden;
+    border-radius: 10px;
+    backface-visibility: hidden;
 }
 
 .card-front {
-  background: linear-gradient(135deg, #3b82f6, #6366f1);
+    background: linear-gradient(135deg, #3b82f6, #6366f1);
 }
 
 .card-back {
-  background: #1e293b;
-  transform: rotateY(180deg);
+    background: #1e293b;
+    transform: rotateY(180deg);
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .card-back img {
-  width: 60%;
-  height: auto;
+    width: 60%;
+    height: auto;
 }
 
 .card:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .card.matched .card-inner {
-  box-shadow: 0 0 10px #22c55e;
+    box-shadow: 0 0 10px #22c55e;
 }
 
 .card.disabled {
-  pointer-events: none;
-  opacity: 0.6;
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+.timer {
+    margin-left: 10px;
+    text-align: center;
+    color:#6366f1;
+
 }
