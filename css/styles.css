@@ -12,14 +12,17 @@ body {
     min-height: 100vh;
 }
 
+
 main {
     flex: 1;
     display: flex;
+    justify-content: center;
 }
+
 
 .bienvenida {
     padding-top: 10px;
-    color: red;
+    color: #4f46e5;
     justify-self: center;
     
 }
@@ -40,7 +43,6 @@ a {
 }
 
 tr {
-    background-color: red;
     height: 45px;
 }
 
@@ -86,17 +88,19 @@ tr {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    background-color: aqua;
+    background-color: #ffffff;
     width: 90vw;
+    color: #4f46e5;
+    box-shadow: 0px 2px 10px #4f46e5;
 }
 
 .posicion_ranking {
     display: flex;
     flex-wrap: wrap;
     justify-content: left;
-    background-color: aqua;
+    background-color: rgb(255, 255, 255);
     width: 90vw;
-
+    box-shadow: 0px 2px 10px #4f46e5;
 }
 
 .item_ranking {
@@ -155,6 +159,18 @@ tr {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+}
+
+
+.div_index {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.div_index > :nth-child(3) {
+  margin-top: 50px; 
 }
 
 .btn_green:hover {
@@ -228,6 +244,7 @@ tr {
 .game {
     flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -309,6 +326,133 @@ tr {
 .timer {
     margin-left: 10px;
     text-align: center;
-    color:#6366f1;
+    color:#4f46e5;
 
+}
+
+.move_counter {
+    text-align: center;
+}
+
+.contenedor_timer_move {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+}
+
+.main_game {
+    display: flex;
+    flex-direction: column;
+}
+
+fieldset {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+fieldset, p {
+    margin: 10px;
+}
+
+legend {
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 1024px) {
+    .encabezado, .posicion_ranking {
+        width: 95vw; 
+    }
+  
+    .contenedor_timer_move {
+        gap: 60px; 
+    }
+
+    .grid {
+        gap: 8px; 
+    }
+}
+
+@media (max-width: 768px) {
+  
+    main {
+        padding: 0 15px; 
+    }
+
+    .div_index > :nth-child(3) {
+        margin-top: 30px; 
+    }
+
+    
+    .form {
+        width: 100%;
+        margin: 20px auto;
+        padding: 0 10px;
+    }
+    
+    .form_group {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 0.5rem;
+    }
+
+    .form_group input {
+        width: 100%; 
+    }
+
+
+    .ranking_tabla {
+        width: 100%;
+        padding: 0 10px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch; 
+    }
+
+    .ranking_tabla table {
+        width: 100%;
+        min-width: 380px;
+        border-collapse: collapse;
+    }
+
+    .encabezado th,
+    .posicion_ranking td {
+        font-size: 0.8rem;
+        padding: 8px 6px;
+        white-space: nowrap;
+    }
+
+
+    .rank           { width: 8%; }
+    .nombre_jugador { width: 45%; }
+    .tiempo_jugador { width: 22%; }
+    .puntaje_jugador{ width: 25%; }
+
+    
+    .grid {
+        grid-template-columns: repeat(4, 1fr); 
+        width: 95vw;
+        height: auto; 
+        gap: 6px;
+    }
+
+    .contenedor_timer_move {
+        gap: 30px; 
+        font-size: 1rem;
+    }
+
+
+    .lista_menu {
+        justify-content: center; 
+        padding-left: 0;
+        gap: 10px;
+    }
+
+    fieldset {
+        margin: 15px 0;
+        flex-direction: column; 
+        align-items: center;
+    }
 }
