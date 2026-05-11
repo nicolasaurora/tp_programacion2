@@ -362,6 +362,89 @@ legend {
 }
 
 
+.btn-darkmode {
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    padding: 0 5px;
+    line-height: 1;
+    margin-left: auto;
+}
+
+
+body.dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+body.dark .bienvenida {
+    color: #818cf8;
+}
+
+body.dark .links_menu {
+    color: #818cf8;
+}
+
+body.dark .links_menu:visited {
+    color: #a5b4fc;
+}
+
+body.dark .encabezado {
+    background-color: #1e293b;
+    color: #818cf8;
+    box-shadow: 0px 2px 10px #4338ca;
+}
+
+body.dark .posicion_ranking {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    box-shadow: 0px 2px 10px #4338ca;
+}
+
+body.dark .item_ranking {
+    border-color: #334155;
+}
+
+body.dark .footer,
+body.dark .footer_game {
+    color: #e2e8f0;
+    border-color: #334155;
+}
+
+body.dark .timer {
+    color: #818cf8;
+}
+
+body.dark .card-front {
+    background: linear-gradient(135deg, #1e40af, #4338ca);
+}
+
+body.dark .card-back {
+    background: #0f172a;
+}
+
+body.dark fieldset {
+    border-color: #334155;
+    color: #e2e8f0;
+}
+
+body.dark input {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    border-color: #334155;
+}
+
+body.dark legend {
+    color: #818cf8;
+}
+
+
+
+
+
+
+
 @media (max-width: 1024px) {
     .encabezado, .posicion_ranking {
         width: 95vw; 
