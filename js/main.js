@@ -281,3 +281,8 @@ function mostrarRanking() {
 }
 
 document.addEventListener('DOMContentLoaded', mostrarRanking)
+
+document.getElementById('btn-reset-ranking').addEventListener('click', function() {
+    localStorage.removeItem('ranking');
+    document.getElementById('ranking-body').innerHTML = '';
+});
